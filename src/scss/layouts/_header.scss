@@ -1,0 +1,36 @@
+.slider {
+  width: 100%;
+  height: 500px;
+  position: relative;
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 300ms;
+    display: block;
+    width: 600px;
+    height: 400px;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px  15px;
+    background-color: #f72464;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .btn-group{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
